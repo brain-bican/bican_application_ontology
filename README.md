@@ -55,3 +55,11 @@ These materials are provided under the Attribution International 4.0 (CC-BY-4.0)
 ## Acknowledgements
 
 This ontology repository was created using the [Ontology Development Kit (ODK)](https://github.com/INCATools/ontology-development-kit).
+
+Creation and maintenance of the ontology were supported by: 
+
+    National Institutes of Mental Health under award number U24MH130919 (PIs Michael Hawrylycz and Carol Thompson)  
+
+    National Institutes of Mental Health under award number U24MH114827 (PIs Michael Hawrylycz, Lydia Ng, Maryann Martone, Timothy Tickle, Paul Yushkevich) 
+
+    Allen Institute for Brain Science.
