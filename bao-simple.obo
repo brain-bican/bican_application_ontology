@@ -1,0 +1,21 @@
+format-version: 1.2
+data-version: bao/releases/2022-10-26/bao-simple.owl
+ontology: bao/bao-simple
+property_value: dcterms-license https://creativecommons.org/licenses/unspecified
+property_value: http://purl.org/dc/terms/description "None" xsd:string
+property_value: http://purl.org/dc/terms/title "BICAN Application Ontology" xsd:string
+property_value: owl:versionInfo "2022-10-26" xsd:string
+
+[Term]
+id: BAO:0000000
+name: root node
+
+[Typedef]
+id: dcterms-license
+name: license
+namespace: uberon
+xref: http://purl.org/dc/terms/license
+property_value: http://purl.org/dc/elements/1.1/date 2018-05-11T13:47:29Z xsd:dateTime
+property_value: IAO:0000117 "Mark Miller" xsd:string
+is_metadata_tag: true
+
