@@ -1,32 +1,29 @@
-# Sparql checks
 
-[SPARQL](https://www.w3.org/TR/rdf-sparql-query/) is a W3C standard
-query language for RDF. This directory contains useful SPARQL queries
-for perfoming over the ontology.
+![Build Status](https://github.com/brain-bican/bican_application_ontology/workflows/CI/badge.svg)
+# BICAN Application Ontology
 
-SPARQL can be executed on a triplestore or directly on any OWL
-file. The queries here are all executed on either bao-edit.obo or
-downstream products in the [ontology](../ontology/) folder. We use
-`robot` as this allows easy execution over any Obo-format or OWL file.
+Description: None
 
-We break the queries into 3 categories:
+More information can be found at http://obofoundry.org/ontology/bao
 
-## Constraint Violation checks
+## Versions
 
-These are all named `*violation.sparql`. A subset of these are
-configured to be executed via travis. If these return any results,
-then the build will fail.
+### Stable release versions
 
-Consult the individual sparql files to see the intent of the check
+The latest version of the ontology can always be found at:
 
-## Construct queries
+http://purl.obolibrary.org/obo/bao.owl
 
-These are named `construct*.sparql`, and always have the form `CONSTRUCT ...`.
+(note this will not show up until the request has been approved by obofoundry.org)
 
-These are used to generate new OWL axioms that can be inserted back
-into the ontology.
+### Editors' version
 
-## Reports
+Editors of this ontology should use the edit version, [src/ontology/bao-edit.owl](src/ontology/bao-edit.owl)
 
-The remaining SPARQL queries are for informative purposes. A subset
-may be executed with each release.
+## Contact
+
+Please use this GitHub repository's [Issue tracker](https://github.com/brain-bican/bican_application_ontology/issues) to request new terms/classes or report errors or specific concerns related to the ontology.
+
+## Acknowledgements
+
+This ontology repository was created using the [Ontology Development Kit (ODK)](https://github.com/INCATools/ontology-development-kit).

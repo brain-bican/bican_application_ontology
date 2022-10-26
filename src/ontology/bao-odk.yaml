@@ -1,0 +1,22 @@
+id: bao
+title: "BICAN Application Ontology"
+github_org: brain-bican
+git_main_branch: main
+repo: bican_application_ontology
+release_artefacts:
+    - base
+    - full
+    - simple
+primary_release: full
+export_formats:
+    - owl
+    - obo
+    - json
+import_group:
+    products:
+        - id: cob
+        - id: obi
+        - id: ro
+        - id: cl
+        - id: omo
+robot_java_args: "Xmx16G"
