@@ -58,8 +58,8 @@ This ontology repository was created using the [Ontology Development Kit (ODK)](
 
 Creation and maintenance of the ontology were supported by: 
 
-    National Institutes of Mental Health under award number U24MH130919 (PIs Michael Hawrylycz and Carol Thompson)  
+National Institutes of Mental Health under award number U24MH130919 (PIs Michael Hawrylycz and Carol Thompson)  
 
-    National Institutes of Mental Health under award number U24MH114827 (PIs Michael Hawrylycz, Lydia Ng, Maryann Martone, Timothy Tickle, Paul Yushkevich) 
+National Institutes of Mental Health under award number U24MH114827 (PIs Michael Hawrylycz, Lydia Ng, Maryann Martone, Timothy Tickle, Paul Yushkevich) 
 
-    Allen Institute for Brain Science.
+Allen Institute for Brain Science.
