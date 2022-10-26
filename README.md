@@ -41,6 +41,7 @@ If you aren’t sure which method is best for you or how to proceed, please cont
 
 Patrick L. Ray (Allen Institute for Brain Science) [email](patrick.ray@alleninstitute.org)
 Shawn Tan (EBI-EBML)
+
 ## Contact
 
 Please use this GitHub repository's [Issue tracker](https://github.com/brain-bican/bican_application_ontology/issues) to request new terms/classes or report errors or specific concerns related to the ontology.
