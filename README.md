@@ -40,6 +40,7 @@ If you aren’t sure which method is best for you or how to proceed, please cont
 ### Editors
 
 Patrick L. Ray (Allen Institute for Brain Science) [email](patrick.ray@alleninstitute.org)
+
 Shawn Tan (EBI-EBML)
 
 ## Contact
