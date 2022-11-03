@@ -97,9 +97,9 @@ all_main: $(MAIN_FILES)
 # ----------------------------------------
 
 
-IMPORTS =  cob obi ro cl omo
+IMPORTS =  cob obi ro cl uberon pcl omo go
 
-IMPORT_ROOTS = $(patsubst %, $(IMPORTDIR)/%_import, $(IMPORTS))
+IMPORT_ROOTS =  $(IMPORTDIR)/merged_import
 IMPORT_OWL_FILES = $(foreach n,$(IMPORT_ROOTS), $(n).owl)
 IMPORT_FILES = $(IMPORT_OWL_FILES)
 
@@ -263,9 +263,22 @@ $(IMPORTDIR)/%_terms_combined.txt: $(IMPORTSEED) $(IMPORTDIR)/%_terms.txt
 	if [ $(IMP) = true ]; then cat $^ | grep -v ^# | sort | uniq >  $@; fi
 
 
+ALL_TERMS_COMBINED = $(patsubst %, $(IMPORTDIR)/%_terms_combined.txt, $(IMPORTS))
+$(IMPORTDIR)/merged_terms_combined.txt: $(ALL_TERMS_COMBINED)
+	if [ $(IMP) = true ]; then cat $^ | grep -v ^# | sort | uniq >  $@; fi
 
 
-$(IMPORTDIR)/%_import.owl: $(MIRRORDIR)/%.owl $(IMPORTDIR)/%_terms_combined.txt
+$(IMPORTDIR)/merged_import.owl: $(MIRRORDIR)/merged.owl $(IMPORTDIR)/merged_terms_combined.txt
+	if [ $(IMP) = true ]; then $(ROBOT) merge -i $< \
+		remove  --select "<http://www.informatics.jax.org/marker/MGI:*>" remove  --select "<http://purl.obolibrary.org/obo/OBA_*>" remove  --select "<http://purl.obolibrary.org/obo/ENVO_*>" remove  --select "<http://purl.obolibrary.org/obo/OBI_*>" remove  --select "<http://purl.obolibrary.org/obo/GOCHE_*>" remove  --select "<http://purl.obolibrary.org/obo/CLO_*>" remove  --select "<http://www.genenames.org/cgi-bin/gene_symbol_report*>"  \
+		extract -T $(IMPORTDIR)/merged_terms_combined.txt --force true --copy-ontology-annotations true --individuals include --method BOT \
+		query --update ../sparql/inject-subset-declaration.ru --update ../sparql/inject-synonymtype-declaration.ru --update ../sparql/postprocess-module.ru \
+		annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@; fi
+
+
+
+
+$(IMPORTDIR)/%_import.owl: $(MIRRORDIR)/merged.owl $(IMPORTDIR)/%_terms_combined.txt
 	if [ $(IMP) = true ]; then $(ROBOT) query -i $< --update ../sparql/preprocess-module.ru \
 		extract -T $(IMPORTDIR)/$*_terms_combined.txt --force true --copy-ontology-annotations true --individuals include --method BOT \
 		query --update ../sparql/inject-subset-declaration.ru --update ../sparql/inject-synonymtype-declaration.ru --update ../sparql/postprocess-module.ru \
@@ -308,9 +321,8 @@ IMP_LARGE=true # Global parameter to bypass handling of large imports
 .PHONY: mirror-cob
 .PRECIOUS: $(MIRRORDIR)/cob.owl
 mirror-cob: | $(TMPDIR)
-	if [ $(MIR) = true ] && [ $(IMP) = true ]; then curl -L $(URIBASE)/cob.owl --create-dirs -o $(MIRRORDIR)/cob.owl --retry 4 --max-time 200 &&\
-		$(ROBOT) convert -i $(MIRRORDIR)/cob.owl -o $@.tmp.owl &&\
-		mv $@.tmp.owl $(TMPDIR)/$@.owl; fi
+	if [ $(MIR) = true ] && [ $(IMP) = true ]; then curl -L $(URIBASE)/cob/cob-base.owl --create-dirs -o $(MIRRORDIR)/cob.owl --retry 4 --max-time 200 &&\
+		$(ROBOT) convert -i $(MIRRORDIR)/cob.owl -o $@.tmp.owl && mv $@.tmp.owl $(TMPDIR)/$@.owl; fi
 
 
 ## ONTOLOGY: obi
@@ -318,7 +330,8 @@ mirror-cob: | $(TMPDIR)
 .PRECIOUS: $(MIRRORDIR)/obi.owl
 mirror-obi: | $(TMPDIR)
 	if [ $(MIR) = true ] && [ $(IMP) = true ]; then curl -L $(URIBASE)/obi.owl --create-dirs -o $(MIRRORDIR)/obi.owl --retry 4 --max-time 200 &&\
-		$(ROBOT) convert -i $(MIRRORDIR)/obi.owl -o $@.tmp.owl &&\
+		$(ROBOT) convert -i $(MIRRORDIR)/obi.owl -o $@.tmp.owl && \
+		$(ROBOT) remove -i $@.tmp.owl --base-iri $(URIBASE)/OBI --axioms external --preserve-structure false --trim false -o $@.tmp.owl &&\
 		mv $@.tmp.owl $(TMPDIR)/$@.owl; fi
 
 
@@ -326,27 +339,55 @@ mirror-obi: | $(TMPDIR)
 .PHONY: mirror-ro
 .PRECIOUS: $(MIRRORDIR)/ro.owl
 mirror-ro: | $(TMPDIR)
-	if [ $(MIR) = true ] && [ $(IMP) = true ]; then curl -L $(URIBASE)/ro.owl --create-dirs -o $(MIRRORDIR)/ro.owl --retry 4 --max-time 200 &&\
-		$(ROBOT) convert -i $(MIRRORDIR)/ro.owl -o $@.tmp.owl &&\
-		mv $@.tmp.owl $(TMPDIR)/$@.owl; fi
+	if [ $(MIR) = true ] && [ $(IMP) = true ]; then curl -L $(URIBASE)/ro/ro-base.owl --create-dirs -o $(MIRRORDIR)/ro.owl --retry 4 --max-time 200 &&\
+		$(ROBOT) convert -i $(MIRRORDIR)/ro.owl -o $@.tmp.owl && mv $@.tmp.owl $(TMPDIR)/$@.owl; fi
 
 
 ## ONTOLOGY: cl
 .PHONY: mirror-cl
 .PRECIOUS: $(MIRRORDIR)/cl.owl
 mirror-cl: | $(TMPDIR)
-	if [ $(MIR) = true ] && [ $(IMP) = true ]; then curl -L $(URIBASE)/cl.owl --create-dirs -o $(MIRRORDIR)/cl.owl --retry 4 --max-time 200 &&\
-		$(ROBOT) convert -i $(MIRRORDIR)/cl.owl -o $@.tmp.owl &&\
-		mv $@.tmp.owl $(TMPDIR)/$@.owl; fi
+	if [ $(MIR) = true ] && [ $(IMP) = true ]; then curl -L $(URIBASE)/cl/cl-base.owl --create-dirs -o $(MIRRORDIR)/cl.owl --retry 4 --max-time 200 &&\
+		$(ROBOT) convert -i $(MIRRORDIR)/cl.owl -o $@.tmp.owl && mv $@.tmp.owl $(TMPDIR)/$@.owl; fi
+
+
+## ONTOLOGY: uberon
+.PHONY: mirror-uberon
+.PRECIOUS: $(MIRRORDIR)/uberon.owl
+mirror-uberon: | $(TMPDIR)
+	if [ $(MIR) = true ] && [ $(IMP) = true ]; then curl -L $(URIBASE)/uberon/uberon-base.owl --create-dirs -o $(MIRRORDIR)/uberon.owl --retry 4 --max-time 200 &&\
+		$(ROBOT) convert -i $(MIRRORDIR)/uberon.owl -o $@.tmp.owl && mv $@.tmp.owl $(TMPDIR)/$@.owl; fi
+
+
+## ONTOLOGY: pcl
+.PHONY: mirror-pcl
+.PRECIOUS: $(MIRRORDIR)/pcl.owl
+mirror-pcl: | $(TMPDIR)
+	if [ $(MIR) = true ] && [ $(IMP) = true ]; then curl -L $(URIBASE)/pcl/pcl-base.owl --create-dirs -o $(MIRRORDIR)/pcl.owl --retry 4 --max-time 200 &&\
+		$(ROBOT) convert -i $(MIRRORDIR)/pcl.owl -o $@.tmp.owl && mv $@.tmp.owl $(TMPDIR)/$@.owl; fi
 
 
 ## ONTOLOGY: omo
 .PHONY: mirror-omo
 .PRECIOUS: $(MIRRORDIR)/omo.owl
 mirror-omo: | $(TMPDIR)
-	if [ $(MIR) = true ] && [ $(IMP) = true ]; then curl -L $(URIBASE)/omo.owl --create-dirs -o $(MIRRORDIR)/omo.owl --retry 4 --max-time 200 &&\
-		$(ROBOT) convert -i $(MIRRORDIR)/omo.owl -o $@.tmp.owl &&\
-		mv $@.tmp.owl $(TMPDIR)/$@.owl; fi
+	if [ $(MIR) = true ] && [ $(IMP) = true ]; then curl -L $(URIBASE)/omo/omo-base.owl --create-dirs -o $(MIRRORDIR)/omo.owl --retry 4 --max-time 200 &&\
+		$(ROBOT) convert -i $(MIRRORDIR)/omo.owl -o $@.tmp.owl && mv $@.tmp.owl $(TMPDIR)/$@.owl; fi
+
+
+## ONTOLOGY: go
+.PHONY: mirror-go
+.PRECIOUS: $(MIRRORDIR)/go.owl
+mirror-go: | $(TMPDIR)
+	if [ $(MIR) = true ] && [ $(IMP) = true ]; then curl -L $(URIBASE)/go/go-base.owl --create-dirs -o $(MIRRORDIR)/go.owl --retry 4 --max-time 200 &&\
+		$(ROBOT) convert -i $(MIRRORDIR)/go.owl -o $@.tmp.owl && mv $@.tmp.owl $(TMPDIR)/$@.owl; fi
+
+ALL_MIRRORS = $(patsubst %, $(MIRRORDIR)/%.owl, $(IMPORTS))
+MERGE_MIRRORS = true
+
+$(MIRRORDIR)/merged.owl: $(ALL_MIRRORS)
+	if [ $(IMP) = true ] && [ $(MERGE_MIRRORS) = true ]; then $(ROBOT) merge $(patsubst %, -i %, $^) -o $@; fi
+.PRECIOUS: $(MIRRORDIR)/merged.owl
 
 
 $(MIRRORDIR)/%.owl: mirror-% | $(MIRRORDIR)

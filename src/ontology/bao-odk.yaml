@@ -13,10 +13,34 @@ export_formats:
     - obo
     - json
 import_group:
+    use_base_merging: TRUE
+    exclude_iri_patterns:
+      - <http://www.informatics.jax.org/marker/MGI:*>
+      - <http://purl.obolibrary.org/obo/OBA_*>
+      - <http://purl.obolibrary.org/obo/ENVO_*>
+      - <http://purl.obolibrary.org/obo/OBI_*>
+      - <http://purl.obolibrary.org/obo/GOCHE_*>
+      - <http://purl.obolibrary.org/obo/CLO_*>
+      - <http://www.genenames.org/cgi-bin/gene_symbol_report*>
     products:
         - id: cob
+          use_base: TRUE
         - id: obi
+          make_base: TRUE
         - id: ro
+          use_base: TRUE
         - id: cl
+          use_base: TRUE
+        - id: uberon
+          use_base: TRUE
+        - id: pcl
+          use_base: TRUE
         - id: omo
-robot_java_args: "Xmx16G"
+          use_base: TRUE
+        - id: go
+          use_base: TRUE
+          base_iris:
+            - http://purl.obolibrary.org/obo/GO_
+            - http://purl.obolibrary.org/obo/GOREL_
+            - http://purl.obolibrary.org/obo/GOCHE_
+robot_java_args: "-Xmx16G"
