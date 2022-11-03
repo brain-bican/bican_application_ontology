@@ -1,2 +1,0 @@
-term
-http://purl.obolibrary.org/obo/BAO_0000000
