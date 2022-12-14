@@ -1,6 +1,6 @@
 # PURL configuration for http://purl.obolibrary.org/obo/bicano
 
-idspace: BAO
+idspace: BICANO
 base_url: /obo/bicano
 
 products:
@@ -9,7 +9,7 @@ products:
 
 term_browser: ontobee
 example_terms:
-- BAO_0000000
+- BICANO_0000000
 
 entries:
 
@@ -20,7 +20,7 @@ entries:
   replacement: https://github.com/brain-bican/bican_application_ontology/issues
 
 - prefix: /about/
-  replacement: http://www.ontobee.org/ontology/BAO?iri=http://purl.obolibrary.org/obo/
+  replacement: http://www.ontobee.org/ontology/BICANO?iri=http://purl.obolibrary.org/obo/
 
 ## generic fall-through, serve direct from github by default
 - prefix: /

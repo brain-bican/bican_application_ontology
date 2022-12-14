@@ -50,7 +50,7 @@ property_value: IAO:0000118 "data set creation" xsd:string
 property_value: IAO:0000118 "dataset creation" xsd:string
 
 [Term]
-id: BAO:0000000
+id: BICANO:0000000
 name: root node
 
 [Term]

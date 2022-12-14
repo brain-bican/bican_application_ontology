@@ -65,9 +65,9 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/BAO_0000000 -->
+    <!-- http://purl.obolibrary.org/obo/BICANO_0000000 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BAO_0000000">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BICANO_0000000">
         <rdfs:label xml:lang="en">root node</rdfs:label>
     </owl:Class>
 </rdf:RDF>

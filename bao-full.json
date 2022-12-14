@@ -20908,7 +20908,7 @@
           "type": "PROPERTY"
         },
         {
-          "id": "http://purl.obolibrary.org/obo/BAO_0000000",
+          "id": "http://purl.obolibrary.org/obo/BICANO_0000000",
           "lbl": "root node",
           "type": "CLASS"
         },

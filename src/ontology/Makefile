@@ -166,10 +166,10 @@ endif
 # ----------------------------------------
 
 $(REPORTDIR)/$(SRC)-obo-report.tsv: $(SRCMERGED) | $(REPORTDIR)
-	$(ROBOT) report -i $< $(REPORT_LABEL) $(REPORT_PROFILE_OPTS) --fail-on $(REPORT_FAIL_ON) --base-iri $(URIBASE)/BAO_ --base-iri $(URIBASE)/bicano --print 5 -o $@
+	$(ROBOT) report -i $< $(REPORT_LABEL) $(REPORT_PROFILE_OPTS) --fail-on $(REPORT_FAIL_ON) --base-iri $(URIBASE)/BICANO_ --base-iri $(URIBASE)/bicano --print 5 -o $@
 
 $(REPORTDIR)/%-obo-report.tsv: % | $(REPORTDIR)
-	$(ROBOT) report -i $< $(REPORT_LABEL) $(REPORT_PROFILE_OPTS) --fail-on $(REPORT_FAIL_ON) --base-iri $(URIBASE)/BAO_ --base-iri $(URIBASE)/bicano --print 5 -o $@
+	$(ROBOT) report -i $< $(REPORT_LABEL) $(REPORT_PROFILE_OPTS) --fail-on $(REPORT_FAIL_ON) --base-iri $(URIBASE)/BICANO_ --base-iri $(URIBASE)/bicano --print 5 -o $@
 
 # ----------------------------------------
 # Release assets

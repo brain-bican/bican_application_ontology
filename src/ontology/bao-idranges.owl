@@ -15,8 +15,8 @@ Ontology: <http://purl.obolibrary.org/obo/bicano/bicano-idranges.owl>
 
 
 Annotations: 
-    idsfor: "BAO",
-    idprefix: "http://purl.obolibrary.org/obo/BAO_",
+    idsfor: "BICANO",
+    idprefix: "http://purl.obolibrary.org/obo/BICANO_",
     iddigits: 7
 
 AnnotationProperty: idprefix:
