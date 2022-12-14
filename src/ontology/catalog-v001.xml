@@ -3,7 +3,7 @@
 <group id="Folder Repository, directory=, recursive=false, Auto-Update=false, version=2" prefer="public" xml:base="">
 
   
-  <uri name="http://purl.obolibrary.org/obo/bao/imports/merged_import.owl" uri="imports/merged_import.owl"/>
+  <uri name="http://purl.obolibrary.org/obo/bicano/imports/merged_import.owl" uri="imports/merged_import.owl"/>
   
 
 </group>
