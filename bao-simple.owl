@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://purl.obolibrary.org/obo/bao/bao-simple.owl#"
-     xml:base="http://purl.obolibrary.org/obo/bao/bao-simple.owl"
+<rdf:RDF xmlns="http://purl.obolibrary.org/obo/bicano/bicano-simple.owl#"
+     xml:base="http://purl.obolibrary.org/obo/bicano/bicano-simple.owl"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
@@ -10,8 +10,8 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
-    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/bao/bao-simple.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/bao/releases/2022-10-26/bao-simple.owl"/>
+    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/bicano/bicano-simple.owl">
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/bicano/releases/2022-10-26/bicano-simple.owl"/>
         <terms:description>None</terms:description>
         <terms:license rdf:resource="https://creativecommons.org/licenses/unspecified"/>
         <terms:title>BICAN Application Ontology</terms:title>

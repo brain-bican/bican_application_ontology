@@ -1,18 +1,18 @@
 Metadata files for the OBO Library
 
- * [bao.yml](bao.yml)
-     * Determines how your purl.obolibrary.org/obo/bao/ redirects will be handled
+ * [bicano.yml](bicano.yml)
+     * Determines how your purl.obolibrary.org/obo/bicano/ redirects will be handled
      * Go here: https://github.com/OBOFoundry/purl.obolibrary.org/tree/master/config
      * Click [New File](https://github.com/OBOFoundry/purl.obolibrary.org/new/master/config)
-     * Paste in the contents of [bao.yml](bao.yml)
+     * Paste in the contents of [bicano.yml](bicano.yml)
      * Click "Commit new file"
      * IMPORTANT: remember to make a pull request
      * An OBO admin will merge your Pull Request *providing it meets the requirements of the OBO library*
- * [bao.md](bao.md)
+ * [bicano.md](bicano.md)
      * Determines how your metadata is shown on OBO Library, OLS and AberOWL
      * Go here: https://github.com/OBOFoundry/OBOFoundry.github.io/tree/master/ontology
      * Click [New File](https://github.com/OBOFoundry/OBOFoundry.github.io/new/master/ontology)
-     * Paste in the contents of [bao.md](bao.md)
+     * Paste in the contents of [bicano.md](bicano.md)
      * Click "Commit new file"
      * IMPORTANT: remember to make a pull request
      * An OBO admin will merge your Pull Request *providing it meets the requirements of the OBO library*

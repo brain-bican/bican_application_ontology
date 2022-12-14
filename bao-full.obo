@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: bao/releases/2022-10-26/bao-full.owl
+data-version: bicano/releases/2022-10-26/bicano-full.owl
 subsetdef: 3_STAR ""
 subsetdef: goslim_agr ""
 subsetdef: goslim_candida ""
@@ -20,7 +20,7 @@ subsetdef: http://purl.obolibrary.org/obo/valid_for_gocam ""
 subsetdef: prokaryote_subset ""
 subsetdef: ro-eco ""
 subsetdef: RO:0002259 ""
-ontology: bao/bao-full
+ontology: bicano/bicano-full
 property_value: dcterms-license https://creativecommons.org/licenses/unspecified
 property_value: http://purl.org/dc/terms/description "None" xsd:string
 property_value: http://purl.org/dc/terms/title "BICAN Application Ontology" xsd:string

@@ -3559,7 +3559,7 @@
           "representativeNodeId": "http://purl.obolibrary.org/obo/BFO_0000023"
         }
       ],
-      "id": "http://purl.obolibrary.org/obo/bao.json",
+      "id": "http://purl.obolibrary.org/obo/bicano.json",
       "logicalDefinitionAxioms": [
         {
           "definedClassId": "http://purl.obolibrary.org/obo/APOLLO_SV_00000008",
@@ -3660,7 +3660,7 @@
             "val": "2022-10-26"
           }
         ],
-        "version": "http://purl.obolibrary.org/obo/bao/releases/2022-10-26/bao.json"
+        "version": "http://purl.obolibrary.org/obo/bicano/releases/2022-10-26/bicano.json"
       },
       "nodes": [
         {

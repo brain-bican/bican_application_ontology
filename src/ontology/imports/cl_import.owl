@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://purl.obolibrary.org/obo/bao/imports/cl_import.owl#"
-     xml:base="http://purl.obolibrary.org/obo/bao/imports/cl_import.owl"
+<rdf:RDF xmlns="http://purl.obolibrary.org/obo/bicano/imports/cl_import.owl#"
+     xml:base="http://purl.obolibrary.org/obo/bicano/imports/cl_import.owl"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:go="http://purl.obolibrary.org/obo/go#"
      xmlns:obo="http://purl.obolibrary.org/obo/"
@@ -17,8 +17,8 @@
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:subsets="http://purl.obolibrary.org/obo/ro/subsets#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
-    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/bao/imports/cl_import.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/bao/releases/2022-10-26/imports/cl_import.owl"/>
+    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/bicano/imports/cl_import.owl">
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/bicano/releases/2022-10-26/imports/cl_import.owl"/>
         <dc:source rdf:resource="http://purl.obolibrary.org/obo/cl/releases/2022-09-15/cl.owl"/>
         <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-10-26</owl:versionInfo>
     </owl:Ontology>

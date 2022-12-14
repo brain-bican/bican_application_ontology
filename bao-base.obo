@@ -1,6 +1,6 @@
 format-version: 1.2
-data-version: bao/releases/2022-10-26/bao-base.owl
-ontology: bao/bao-base
+data-version: bicano/releases/2022-10-26/bicano-base.owl
+ontology: bicano/bicano-base
 property_value: http://purl.org/dc/elements/1.1/type IAO:8000001
 property_value: http://purl.org/dc/terms/description "None" xsd:string
 property_value: http://purl.org/dc/terms/license https://creativecommons.org/licenses/unspecified

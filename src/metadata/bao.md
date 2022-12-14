@@ -1,6 +1,6 @@
 ---
 layout: ontology_detail
-id: bao
+id: bicano
 title: BICAN Application Ontology
 jobs:
   - id: https://travis-ci.org/brain-bican/bican_application_ontology
@@ -17,17 +17,17 @@ description: BICAN Application Ontology is an ontology that represents research,
 domain: BRAIN Initiative Cell Atlas Network entities
 homepage: https://github.com/brain-bican/bican_application_ontology
 products:
-  - id: bao.owl
+  - id: bicano.owl
     name: "BICAN Application Ontology main release in OWL format"
-  - id: bao.obo
+  - id: bicano.obo
     name: "BICAN Application Ontology additional release in OBO format"
-  - id: bao.json
+  - id: bicano.json
     name: "BICAN Application Ontology additional release in OBOJSon format"
-  - id: bao/bao-base.owl
+  - id: bicano/bicano-base.owl
     name: "BICAN Application Ontology main release in OWL format"
-  - id: bao/bao-base.obo
+  - id: bicano/bicano-base.obo
     name: "BICAN Application Ontology additional release in OBO format"
-  - id: bao/bao-base.json
+  - id: bicano/bicano-base.json
     name: "BICAN Application Ontology additional release in OBOJSon format"
 dependencies:
 - id: cob

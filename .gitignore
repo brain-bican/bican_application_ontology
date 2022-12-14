@@ -15,7 +15,7 @@ src/ontology/patterns
 src/ontology/.DS_Store
 src/.DS_Store
 src/ontology/imports/*_terms_combined.txt
-src/ontology/tmp/merged-bao-edit.owl
+src/ontology/tmp/merged-bicano-edit.owl
 src/ontology/tmp/pre_seed.txt
 src/ontology/tmp/seed.txt
 src/ontology/tmp/*

@@ -20,7 +20,7 @@ subsetdef: http://purl.obolibrary.org/obo/valid_for_gocam ""
 subsetdef: prokaryote_subset ""
 subsetdef: ro-eco ""
 subsetdef: RO:0002259 ""
-ontology: bao
+ontology: bicano
 property_value: dcterms-license https://creativecommons.org/licenses/unspecified
 property_value: http://purl.org/dc/terms/description "None" xsd:string
 property_value: http://purl.org/dc/terms/title "BICAN Application Ontology" xsd:string

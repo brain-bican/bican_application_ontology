@@ -45,7 +45,7 @@ To learn how to write a good issue [see here](#great-issues).
 Before you write a new request, please consider the following: 
 
 - **Does the term already exist?** Before submitting suggestions for new ontology terms, check whether the term exist, 
-either as a primary term or a synonym term. You can search for your term using [OLS](http://www.ebi.ac.uk/ols/ontologies/bao).
+either as a primary term or a synonym term. You can search for your term using [OLS](http://www.ebi.ac.uk/ols/ontologies/bicano).
 - **Can you provide a definition for the term?** It should be very clear what the term means, and you should be
 able to provide a concise definition, ideally with a scientific reference.
 - **Is the ontology in scope for the term?** Sometimes, it is hard to tell whether a term "belongs" in
@@ -76,7 +76,7 @@ If you have never editted this ontology before, first follow a [general tutorial
 
 1. Clone the repository (In case you are not an offical team member, create a fork first)
 1. Create new branch in git, for example `git checkout -b issue123`
-1. Open src/ontology/bao-edit.owl in your favourite editor, i.e. [Protege](https://protege.stanford.edu/). **Careful:** double check you are editing the correct file. There are many ontology files in this repository, but only one _editors file_!
+1. Open src/ontology/bicano-edit.owl in your favourite editor, i.e. [Protege](https://protege.stanford.edu/). **Careful:** double check you are editing the correct file. There are many ontology files in this repository, but only one _editors file_!
 1. Perform your edit and save your changes
 1. Commit changes to branch
 1. Push changes upstream

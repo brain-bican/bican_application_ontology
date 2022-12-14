@@ -1,4 +1,4 @@
-These notes are for the EDITORS of bao
+These notes are for the EDITORS of bicano
 
 This project was created using the [ontology development kit](https://github.com/INCATools/ontology-development-kit). See the site for details.
 
@@ -14,15 +14,15 @@ You may also want to read the [GO ontology editors guide](http://go-ontology.rea
 
 ## Editors Version
 
-Make sure you have an ID range in the [idranges file](bao-idranges.owl)
+Make sure you have an ID range in the [idranges file](bicano-idranges.owl)
 
 If you do not have one, get one from the maintainer of this repo.
 
-The editors version is [bao-edit.owl](bao-edit.owl)
+The editors version is [bicano-edit.owl](bicano-edit.owl)
 
-** DO NOT EDIT bao.obo OR bao.owl in the top level directory **
+** DO NOT EDIT bicano.obo OR bicano.owl in the top level directory **
 
-[../../bao.owl](../../bao.owl) is the release version
+[../../bicano.owl](../../bicano.owl) is the release version
 
 To edit, open the file in Protege. First make sure you have the repository cloned, see [the GitHub project](https://github.com/brain-bican/bican_application_ontology) for details.
 
@@ -39,7 +39,7 @@ better to make changes on a branch, and make Pull Requests.
 
 These are stored in the file
 
- * [bao-idranges.owl](bao-idranges.owl)
+ * [bicano-idranges.owl](bicano-idranges.owl)
 
 ** ONLY USE IDs WITHIN YOUR RANGE!! **
 
@@ -96,7 +96,7 @@ If this looks good type:
 
     sh run.sh make prepare_release
 
-This generates derived files such as bao.owl and bao.obo and places
+This generates derived files such as bicano.owl and bicano.obo and places
 them in the top level (../..).
 
 Note that the versionIRI value automatically will be added, and will
@@ -122,8 +122,8 @@ __IMPORTANT__: The value of the "Tag version" field MUST be
     vYYYY-MM-DD
 
 The initial lowercase "v" is REQUIRED. The YYYY-MM-DD *must* match
-what is in the `owl:versionIRI` of the derived bao.owl (`data-version` in
-bao.obo). This will be today's date.
+what is in the `owl:versionIRI` of the derived bicano.owl (`data-version` in
+bicano.obo). This will be today's date.
 
 This cannot be changed after the fact, be sure to get this right!
 
@@ -140,8 +140,8 @@ The PURLs are already configured to pull from github. This means that
 BOTH ontology purls and versioned ontology purls will resolve to the
 correct ontologies. Try it!
 
- * http://purl.obolibrary.org/obo/bao.owl <-- current ontology PURL
- * http://purl.obolibrary.org/obo/bao/releases/YYYY-MM-DD.owl <-- change to the release you just made
+ * http://purl.obolibrary.org/obo/bicano.owl <-- current ontology PURL
+ * http://purl.obolibrary.org/obo/bicano/releases/YYYY-MM-DD.owl <-- change to the release you just made
 
 For questions on this contact Chris Mungall or email obo-admin AT obofoundry.org
 

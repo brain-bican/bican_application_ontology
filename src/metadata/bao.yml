@@ -1,11 +1,11 @@
-# PURL configuration for http://purl.obolibrary.org/obo/bao
+# PURL configuration for http://purl.obolibrary.org/obo/bicano
 
 idspace: BAO
-base_url: /obo/bao
+base_url: /obo/bicano
 
 products:
-- bao.owl: https://raw.githubusercontent.com/brain-bican/bican_application_ontology/main/bao.owl
-- bao.obo: https://raw.githubusercontent.com/brain-bican/bican_application_ontology/main/bao.obo
+- bicano.owl: https://raw.githubusercontent.com/brain-bican/bican_application_ontology/main/bicano.owl
+- bicano.obo: https://raw.githubusercontent.com/brain-bican/bican_application_ontology/main/bicano.obo
 
 term_browser: ontobee
 example_terms:
