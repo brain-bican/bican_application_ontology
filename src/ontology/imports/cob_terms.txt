@@ -1,1 +1,41 @@
-
+PATO:0000001 ## characteristic
+COB:0000120 ## information representation
+PATO:0000125 ## mass
+BFO:0000017 ## realizable
+OBI:0000260 ## plan
+BFO:0000016 ## disposition
+BFO:0000023 ## role
+BFO:0000041 ## immaterial entity
+IAO:0000030 ## information
+BFO:0000040 ## material entity
+BFO:0000015 ## process
+COB:0000056 ## immaterial anatomical entity
+BFO:0000029 ## site
+OBI:0001909 ## conclusion based on data
+IAO:0000027 ## data item
+COB:0000121 ## measurement datum
+IAO:0000033 ## directive information content entity
+OGMS:0000073 ## disease diagnosis
+IAO:0000310 ## document
+OGMS:0000014 ## phenotypic finding
+CL:0000000 ## cell
+PCO:0000000 ## collection of organisms
+COB:0000013 ## molecular entity
+COB:0000073 ## gene product
+PR:000000001 ## protein
+CARO:0001010 ## organism
+CARO:0010004 ## cellular organism
+OBI:0000245 ## organization
+COB:0000122 ## physical information carrier
+COB:0000020 ## subcellular structure
+GO:0005634 ## cell nucleus
+COB:0000116 ## cellular membrane
+GO:0008150 ## biological process
+OGMS:0000063 ## disease course
+COB:0000082 ## planned process
+COB:0000083 ## failed planned process
+OBI:0000011 ## completely executed planned process
+OBI:0000070 ## assay
+OBI:0200000 ## data transformation
+OBI:0000066 ## investigation
+OBI:0000094 ## material processing
