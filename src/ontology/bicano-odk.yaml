@@ -43,4 +43,8 @@ import_group:
             - http://purl.obolibrary.org/obo/GO_
             - http://purl.obolibrary.org/obo/GOREL_
             - http://purl.obolibrary.org/obo/GOCHE_
+        - id: ncbitaxon
+          mirror_from: http://purl.obolibrary.org/obo/ncbitaxon/subsets/taxslim.owl
+        - id: ogms
+          make_base: TRUE
 robot_java_args: "-Xmx16G"
