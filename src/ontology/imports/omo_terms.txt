@@ -25,4 +25,4 @@ IAO:8000018 ## obo basic subset ontology module
 IAO:8000019 ## ontology module subsetted by OWL profile
 IAO:8000020 ## EL++ ontology module
 IAO:8000009 ## single layer subset ontology module
-IAO:0000012 ## species subset ontology module
+IAO:8000012 ## species subset ontology module
