@@ -1,0 +1,27 @@
+# PURL configuration for http://purl.obolibrary.org/obo/bicano
+
+idspace: BICANO
+base_url: /obo/bicano
+
+products:
+- bicano.owl: https://raw.githubusercontent.com/brain-bican/bican_application_ontology/main/bicano.owl
+- bicano.obo: https://raw.githubusercontent.com/brain-bican/bican_application_ontology/main/bicano.obo
+
+term_browser: ontobee
+example_terms:
+- BICANO_0000000
+
+entries:
+
+- prefix: /releases/
+  replacement: https://raw.githubusercontent.com/brain-bican/bican_application_ontology/v
+
+- prefix: /tracker/
+  replacement: https://github.com/brain-bican/bican_application_ontology/issues
+
+- prefix: /about/
+  replacement: http://www.ontobee.org/ontology/BICANO?iri=http://purl.obolibrary.org/obo/
+
+## generic fall-through, serve direct from github by default
+- prefix: /
+  replacement: https://raw.githubusercontent.com/brain-bican/bican_application_ontology/main/

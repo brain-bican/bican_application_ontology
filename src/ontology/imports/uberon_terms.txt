@@ -1,1 +1,4 @@
-
+UBERON:0000061 ## anatomical structure
+UBERON:0000465 ## material anatomical entity
+UBERON:0000479 ## tissue
+UBERON:0000955 ## brain

@@ -4,7 +4,7 @@
 
 Overview: This is the developers’ repository for an application ontology to support work affiliated with BRAIN Initiative Cell Atlas Network (BICAN).  
 
-The focus of the BICAN Application Ontology (bao) is research, subjects of research, and the results of research in BICAN. It is a link between scientific knowledge gained through experimentation and the distribution/dissemination of that knowledge. It aims to help scientists annotate data and communicate about their work by defining a set of terms relevant to BICAN efforts. 
+The focus of the BICAN Application Ontology (bicano) is research, subjects of research, and the results of research in BICAN. It is a link between scientific knowledge gained through experimentation and the distribution/dissemination of that knowledge. It aims to help scientists annotate data and communicate about their work by defining a set of terms relevant to BICAN efforts. 
 
 Development of this ontology draws on and integrates previous work done on standardization in BICCN and Brain Data Standards projects and aims to interoperate with the larger biomedical ontology community. The development team adheres, as much as possible, to the standards of best practices in ontology development as outlined by the OBO Foundry. The team members are also responsible for reviewing changes in the ontology to be sure that they accurately reflect the best current understandings of brain science.  
 
@@ -15,11 +15,11 @@ The team works in conjunction with a team of software developers to ensure that 
 There are a few different versions of the ontology.
 ### Stable Release Versions
 
-The latest version of the ontology can be found [here](/bao.owl)
+The latest version of the ontology can be found [here](/bicano.owl)
 
 ### Editors' Version
 
-Editors of this ontology should use the edit version, [src/ontology/bao-edit.owl](src/ontology/bao-edit.owl)
+Editors of this ontology should use the edit version, [src/ontology/bicano-edit.owl](src/ontology/bicano-edit.owl)
 
 ### Older Versions
 

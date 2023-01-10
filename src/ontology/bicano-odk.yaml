@@ -1,0 +1,50 @@
+id: bicano
+title: "BICAN Application Ontology"
+github_org: brain-bican
+git_main_branch: main
+repo: bican_application_ontology
+release_artefacts:
+    - base
+    - full
+    - simple
+primary_release: full
+export_formats:
+    - owl
+    - obo
+    - json
+import_group:
+    use_base_merging: TRUE
+    exclude_iri_patterns:
+      - <http://www.informatics.jax.org/marker/MGI:*>
+      - <http://purl.obolibrary.org/obo/OBA_*>
+      - <http://purl.obolibrary.org/obo/ENVO_*>
+      - <http://purl.obolibrary.org/obo/OBI_*>
+      - <http://purl.obolibrary.org/obo/GOCHE_*>
+      - <http://purl.obolibrary.org/obo/CLO_*>
+      - <http://www.genenames.org/cgi-bin/gene_symbol_report*>
+    products:
+        - id: cob
+          use_base: TRUE
+        - id: obi
+          make_base: TRUE
+        - id: ro
+          use_base: TRUE
+        - id: cl
+          use_base: TRUE
+        - id: uberon
+          use_base: TRUE
+        - id: pcl
+          use_base: TRUE
+        - id: omo
+          use_base: TRUE
+        - id: go
+          use_base: TRUE
+          base_iris:
+            - http://purl.obolibrary.org/obo/GO_
+            - http://purl.obolibrary.org/obo/GOREL_
+            - http://purl.obolibrary.org/obo/GOCHE_
+        - id: ncbitaxon
+          mirror_from: http://purl.obolibrary.org/obo/ncbitaxon/subsets/taxslim.owl
+        - id: ogms
+          make_base: TRUE
+robot_java_args: "-Xmx16G"
