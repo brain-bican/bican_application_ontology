@@ -47,4 +47,6 @@ import_group:
           mirror_from: http://purl.obolibrary.org/obo/ncbitaxon/subsets/taxslim.owl
         - id: ogms
           make_base: TRUE
+        - id: duos
+          make_base: TRUE
 robot_java_args: "-Xmx16G"
