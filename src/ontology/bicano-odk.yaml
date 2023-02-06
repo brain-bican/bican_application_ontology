@@ -49,4 +49,8 @@ import_group:
           make_base: TRUE
         - id: duos
           make_base: TRUE
+        - id: mondo
+          make_base: TRUE
+        - id: hp
+          make_base: TRUE
 robot_java_args: "-Xmx16G"

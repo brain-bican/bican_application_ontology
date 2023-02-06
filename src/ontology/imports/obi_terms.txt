@@ -103,6 +103,7 @@ OBI:0000911 ## real time reverse-transcription polymerase chain reaction assay
 OBI:0000912 ## X-ray crystallography 3D molecular structure determination assay
 OBI:0000913 ## promoter activity detection by reporter gene assay
 OBI:0000916 ## flow cytometry assay
+OBI:0000917 ## nasal swab specimen
 OBI:0000919 ## animal euthanization
 OBI:0000920 ## cytometric bead array assay
 OBI:0000924 ## labeled specimen

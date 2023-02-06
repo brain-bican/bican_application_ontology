@@ -2,3 +2,65 @@ UBERON:0000061 ## anatomical structure
 UBERON:0000465 ## material anatomical entity
 UBERON:0000479 ## tissue
 UBERON:0000955 ## brain
+UBERON:0001013 ## adipose tissue
+UBERON:0018303 ## adrenal tissue
+UBERON:0001245 ## anus
+UBERON:0000947 ## aorta
+UBERON:0001154 ## veriform appendix
+UBERON:0001637 ## artery
+UBERON:0001156 ## ascending colon
+UBERON:0001255 ## urinary bladder
+UBERON:0002228 ## rib
+UBERON:0000310 ## breast
+UBERON:0002185 ## bronchus
+UBERON:0002726 ## cervical spinal cord
+UBERON:0001158 ## descending colon
+UBERON:0001359 ## cerebrospinal fluid
+UBERON:0001103 ## diaphragm
+UBERON:0002114 ## duodenum
+UBERON:0001043 ## esophagus
+UBERON:0000970 ## eye 
+UBERON:0003889 ## fallopian tube
+UBERON:0002110 ## gallbladder
+UBERON:0001037 ## strand of hair
+UBERON:0000948 ## heart
+UBERON:0002116 ## ileum
+UBERON:0002115 ## jejunem
+UBERON:0002113 ## kidney
+UBERON:0002107 ## liver
+UBERON:0002495 ## long bone
+UBERON:0002792 ## lumbar spinal cord
+UBERON:0002048 ## lung
+UBERON:0000029 ## lymph node
+UBERON:0001705 ## nail
+UBERON:0000992 ## ovary
+UBERON:0001264 ## pancreas
+UBERON:0001021 ## nerve
+UBERON:0015238 ## pineal complex
+UBERON:0000007 ## pituitary gland
+UBERON:0001987 ## placenta
+UBERON:0002367 ## prostate gland
+UBERON:0008450 ## psoas muscle
+UBERON:0005843 ## sacral spinal cord
+UBERON:0001977 ## serum
+UBERON:0002097 ## skin of body
+UBERON:0002106 ## spleen
+UBERON:0000945 ## stomach
+UBERON:0004507 ## skeletal muscle of temporalis
+UBERON:0000473 ## testis
+UBERON:0003038 ## thoracic spinal cord
+UBERON:0002370 ## thymus
+UBERON:0002046 ## thyroid gland
+UBERON:0001723 ## tongue 
+UBERON:0002372 ## tonsil
+UBERON:0003126 ## trachea
+UBERON:0002331 ## umbilical cord
+UBERON:0000056 ## ureter
+UBERON:0001088 ## urine
+UBERON:0000995 ## uterus 
+UBERON:0001638 ## vein
+UBERON:0001798 ## vitreous body
+UBERON:0001797 ## vitreous humor 
+UBERON:0000178 ## blood
+UBERON:0001969 ## blood plasma
+UBERON:0000955 ## brain
