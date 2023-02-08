@@ -18,46 +18,12 @@
           },
           {
             "pred": "http://www.w3.org/2002/07/owl#versionInfo",
-            "val": "2022-10-26"
+            "val": "2023-02-08"
           }
         ],
-        "version": "http://purl.obolibrary.org/obo/bicano/releases/2022-10-26/bicano-simple.json"
+        "version": "http://purl.obolibrary.org/obo/bicano/releases/2023-02-08/bicano-simple.json"
       },
       "nodes": [
-        {
-          "id": "http://purl.org/dc/terms/license",
-          "lbl": "license",
-          "meta": {
-            "basicPropertyValues": [
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
-                "val": "Mark Miller"
-              },
-              {
-                "pred": "http://purl.org/dc/elements/1.1/date",
-                "val": "2018-05-11T13:47:29Z"
-              },
-              {
-                "pred": "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
-                "val": "uberon"
-              },
-              {
-                "pred": "http://www.geneontology.org/formats/oboInOwl#is_metadata_tag",
-                "val": "true"
-              },
-              {
-                "pred": "http://www.geneontology.org/formats/oboInOwl#shorthand",
-                "val": "dcterms-license"
-              }
-            ],
-            "xrefs": [
-              {
-                "val": "http://purl.org/dc/terms/license"
-              }
-            ]
-          },
-          "type": "PROPERTY"
-        },
         {
           "id": "http://purl.obolibrary.org/obo/BICANO_0000000",
           "lbl": "root node",
@@ -66,6 +32,11 @@
         {
           "id": "http://purl.org/dc/terms/description",
           "lbl": "description",
+          "type": "PROPERTY"
+        },
+        {
+          "id": "http://purl.org/dc/terms/license",
+          "lbl": "license",
           "type": "PROPERTY"
         },
         {
