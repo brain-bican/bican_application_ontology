@@ -1,50 +1,38 @@
 {
-  "graphs": [
-    {
-      "id": "http://purl.obolibrary.org/obo/bicano/bicano-full.json",
-      "meta": {
-        "basicPropertyValues": [
-          {
-            "pred": "http://purl.org/dc/terms/description",
-            "val": "None"
-          },
-          {
-            "pred": "http://purl.org/dc/terms/license",
-            "val": "https://creativecommons.org/licenses/unspecified"
-          },
-          {
-            "pred": "http://purl.org/dc/terms/title",
-            "val": "BICAN Application Ontology"
-          },
-          {
-            "pred": "http://www.w3.org/2002/07/owl#versionInfo",
-            "val": "2023-02-08"
-          }
-        ],
-        "version": "http://purl.obolibrary.org/obo/bicano/releases/2023-02-08/bicano-full.json"
-      },
-      "nodes": [
-        {
-          "id": "http://purl.obolibrary.org/obo/BICANO_0000000",
-          "lbl": "root node",
-          "type": "CLASS"
-        },
-        {
-          "id": "http://purl.org/dc/terms/description",
-          "lbl": "description",
-          "type": "PROPERTY"
-        },
-        {
-          "id": "http://purl.org/dc/terms/license",
-          "lbl": "license",
-          "type": "PROPERTY"
-        },
-        {
-          "id": "http://purl.org/dc/terms/title",
-          "lbl": "title",
-          "type": "PROPERTY"
-        }
-      ]
-    }
-  ]
+  "graphs" : [ {
+    "id" : "http://purl.obolibrary.org/obo/bicano/bicano-full.json",
+    "meta" : {
+      "basicPropertyValues" : [ {
+        "pred" : "http://purl.org/dc/terms/description",
+        "val" : "None"
+      }, {
+        "pred" : "http://purl.org/dc/terms/license",
+        "val" : "https://creativecommons.org/licenses/unspecified"
+      }, {
+        "pred" : "http://purl.org/dc/terms/title",
+        "val" : "BICAN Application Ontology"
+      }, {
+        "pred" : "http://www.w3.org/2002/07/owl#versionInfo",
+        "val" : "2023-02-17"
+      } ],
+      "version" : "http://purl.obolibrary.org/obo/bicano/releases/2023-02-17/bicano-full.json"
+    },
+    "nodes" : [ {
+      "id" : "http://purl.obolibrary.org/obo/BICANO_0000000",
+      "lbl" : "root node",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://purl.org/dc/terms/description",
+      "lbl" : "description",
+      "type" : "PROPERTY"
+    }, {
+      "id" : "http://purl.org/dc/terms/license",
+      "lbl" : "license",
+      "type" : "PROPERTY"
+    }, {
+      "id" : "http://purl.org/dc/terms/title",
+      "lbl" : "title",
+      "type" : "PROPERTY"
+    } ]
+  } ]
 }

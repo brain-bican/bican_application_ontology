@@ -1,10 +1,10 @@
 format-version: 1.2
-data-version: bicano/releases/2023-02-08/bicano-full.owl
+data-version: bicano/releases/2023-02-17/bicano-full.owl
 ontology: bicano/bicano-full
 property_value: http://purl.org/dc/terms/description "None" xsd:string
 property_value: http://purl.org/dc/terms/license https://creativecommons.org/licenses/unspecified
 property_value: http://purl.org/dc/terms/title "BICAN Application Ontology" xsd:string
-property_value: owl:versionInfo "2023-02-08" xsd:string
+property_value: owl:versionInfo "2023-02-17" xsd:string
 
 [Term]
 id: BICANO:0000000

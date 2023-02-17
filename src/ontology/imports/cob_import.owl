@@ -2,16 +2,16 @@
 <rdf:RDF xmlns="http://purl.obolibrary.org/obo/bicano/imports/cob_import.owl#"
      xml:base="http://purl.obolibrary.org/obo/bicano/imports/cob_import.owl"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:terms="http://purl.org/dc/terms/">
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/bicano/imports/cob_import.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/bicano/releases/2022-10-26/imports/cob_import.owl"/>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/cob/releases/2022-05-02/cob.owl"/>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-10-26</owl:versionInfo>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/bicano/releases/2023-02-09/imports/cob_import.owl"/>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/cob/releases/2022-11-02/cob-base.owl"/>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-02-09</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -27,9 +27,106 @@
     
 
 
-    <!-- http://purl.org/dc/terms/license -->
+    <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/COB_0000013 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000013">
+        <obo:IAO_0000115>A material entity that consists of two or more atoms that are all connected via covalent bonds such that any atom can be transitively connected with any other atom.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">molecular entity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/COB_0000020 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000020">
+        <obo:IAO_0000115>A material entity consisting of at least two macromolecular entities derived from a cell as parts, and that has a function for the cell.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">subcellular structure</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/COB_0000056 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000056">
+        <rdfs:label>immaterial anatomical entity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/COB_0000073 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000073">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000013"/>
+        <rdfs:label>gene product</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/COB_0000082 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000082">
+        <obo:IAO_0000115>A process that is initiated by an agent who intends to carry out a plan to achieve an objective through one or more actions as described in a plan specification.</obo:IAO_0000115>
+        <rdfs:label>planned process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/COB_0000083 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000083">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000082"/>
+        <rdfs:label>failed planned process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/COB_0000116 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000116">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000020"/>
+        <rdfs:label xml:lang="en">cellular membrane</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/COB_0000120 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000120">
+        <rdfs:label>information representation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/COB_0000121 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000121">
+        <rdfs:label>measurement datum</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/COB_0000122 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000122">
+        <rdfs:label>physical information carrier</rdfs:label>
+    </owl:Class>
 </rdf:RDF>
 
 
