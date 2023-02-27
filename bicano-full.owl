@@ -8,11 +8,11 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:terms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/bicano/bicano-full.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/bicano/releases/2023-02-17/bicano-full.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/bicano/releases/2023-02-27/bicano-full.owl"/>
         <terms:description>None</terms:description>
         <terms:license rdf:resource="https://creativecommons.org/licenses/unspecified"/>
         <terms:title>BICAN Application Ontology</terms:title>
-        <owl:versionInfo>2023-02-17</owl:versionInfo>
+        <owl:versionInfo>2023-02-27</owl:versionInfo>
     </owl:Ontology>
     
 

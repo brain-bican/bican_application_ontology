@@ -16,9 +16,9 @@
         "val" : "BICAN Application Ontology"
       }, {
         "pred" : "http://www.w3.org/2002/07/owl#versionInfo",
-        "val" : "2023-02-17"
+        "val" : "2023-02-27"
       } ],
-      "version" : "http://purl.obolibrary.org/obo/bicano/releases/2023-02-17/bicano-base.json"
+      "version" : "http://purl.obolibrary.org/obo/bicano/releases/2023-02-27/bicano-base.json"
     },
     "nodes" : [ {
       "id" : "http://purl.obolibrary.org/obo/BICANO_0000000",
