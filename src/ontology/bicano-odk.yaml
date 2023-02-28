@@ -24,6 +24,7 @@ import_group:
       - <http://www.genenames.org/cgi-bin/gene_symbol_report*>
     products:
         - id: cob
+          module_type: filter
           use_base: TRUE
         - id: obi
           make_base: TRUE
@@ -47,6 +48,10 @@ import_group:
           mirror_from: http://purl.obolibrary.org/obo/ncbitaxon/subsets/taxslim.owl
         - id: ogms
           make_base: TRUE
-        - id: duos
+        - id: duo
+          make_base: TRUE
+        - id: mondo
+          make_base: TRUE
+        - id: hp
           make_base: TRUE
 robot_java_args: "-Xmx16G"

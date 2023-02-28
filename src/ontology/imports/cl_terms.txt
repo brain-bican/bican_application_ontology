@@ -1,3 +1,5 @@
 CL:0000000 ## cell
 CL:0000540 ## neuron
-
+CL:0000127 ## astrocyte
+CL:0000057 ## fibroblast
+CL:0000232 ## erythrocyte

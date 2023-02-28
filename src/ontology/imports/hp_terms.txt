@@ -1,0 +1,7 @@
+HP:0001251 ## ataxia
+HP:0000822 ## hypertension
+HP:0002354 ## memory impairment
+HP:0002076 ## migraine
+HP:0001297 ## stroke
+HP:0100309 ## subdural hemorrhage
+HP:0002138 ## subarachnoid hemorrhage
