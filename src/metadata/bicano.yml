@@ -1,4 +1,4 @@
-# PURL configuration for http://purl.obolibrary.org/obo/bicano
+# PURL configuration for http://purl.brain-bican.org/ontology/bicano
 
 idspace: BICANO
 base_url: /bicano
