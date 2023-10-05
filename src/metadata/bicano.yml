@@ -1,7 +1,7 @@
-# PURL configuration for http://purl.obolibrary.org/obo/bicano
+# PURL configuration for http://purl.brain-bican.org/ontology/bicano
 
 idspace: BICANO
-base_url: /obo/bicano
+base_url: /bicano
 
 products:
 - bicano.owl: https://raw.githubusercontent.com/brain-bican/bican_application_ontology/main/bicano.owl

@@ -3,6 +3,12 @@ title: "BICAN Application Ontology"
 github_org: brain-bican
 git_main_branch: main
 repo: bican_application_ontology
+report_fail_on: none
+uribase: http://purl.brain-bican.org/ontology
+export_formats:
+    - owl
+    - obo
+    - json
 release_artefacts:
     - base
     - full
@@ -14,6 +20,7 @@ export_formats:
     - json
 import_group:
     use_base_merging: TRUE
+    slme_individuals: exclude
     exclude_iri_patterns:
       - <http://www.informatics.jax.org/marker/MGI:*>
       - <http://purl.obolibrary.org/obo/OBA_*>
