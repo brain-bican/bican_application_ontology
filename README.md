@@ -1,5 +1,4 @@
 
-![Build Status](https://github.com/brain-bican/bican_application_ontology/workflows/CI/badge.svg)
 # BICAN Application Ontology
 
 Overview: This is the developers’ repository for an application ontology to support work affiliated with BRAIN Initiative Cell Atlas Network (BICAN).  
