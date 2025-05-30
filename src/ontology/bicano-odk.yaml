@@ -43,8 +43,6 @@ import_group:
           use_base: TRUE
         - id: pcl
           use_base: TRUE
-        - id: omo
-          use_base: TRUE
         - id: go
           use_base: TRUE
           base_iris:
